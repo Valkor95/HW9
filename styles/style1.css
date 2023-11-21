@@ -1,0 +1,311 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  border: none;
+  background: transparent;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.nav {
+  background-color: #EFEFEF;
+}
+.nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.nav .menu .menu-item {
+  padding: 17px 10px;
+  font-weight: 400;
+}
+
+.nav2 {
+  background-color: #fff;
+  border-top: 1px solid #EFEFEF;
+}
+.nav2 .menu2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.nav2 .menu2 .menu-item2 {
+  padding: 30px 15px;
+  font-weight: 500;
+}
+
+.callback {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  padding: 20px 0;
+}
+.callback .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.callback .logo__text {
+  text-transform: uppercase;
+  color: #F13C6E;
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 3.6px;
+}
+.callback .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.callback .cta a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.callback .cta__btn {
+  font-weight: 400;
+  color: #000;
+  border: 2px solid #F13C6E;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 8px 50px;
+}
+
+.text-ex-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: url(../img/sale.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 604px;
+}
+
+.special {
+  background-color: #EFEFEF;
+  padding: 80px 0;
+  width: 100%;
+}
+.special .container {
+  padding: 0 5%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 0;
+}
+.special .container .goods {
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 0;
+  flex-direction: column;
+  width: 100%;
+}
+.special .container .goods .title {
+  background-color: #EFEFEF;
+  font-weight: 700;
+  font-size: 24px;
+  padding-bottom: 38px;
+  align-self: center;
+  width: 80%;
+}
+.special .container .goods .goods-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.special .container .goods .goods-list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  padding: 25px;
+  background-color: #fff;
+}
+.special .container .goods .goods-list .item img {
+  width: 125px;
+}
+.special .container .goods .goods-list .item .name {
+  color: #333;
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+  width: 80%;
+}
+.special .container .goods .goods-list .item .price {
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1.05px;
+  font-size: 21px;
+}
+.special .container .goods .goods-list .item .btn {
+  border-radius: 30px;
+  background-color: #F13C6E;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  padding: 9px 53px;
+}
+.special .container .promo {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  margin: 100px 0;
+}
+.special .container .promo .card {
+  background-color: #F13C6E;
+  padding: 35px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: 0;
+  gap: 45px;
+}
+.special .container .promo .card .content {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: 0;
+  gap: 20px;
+}
+.special .container .promo .card .content .name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.special .container .promo .card .content .text {
+  color: #fff;
+  font-weight: 400;
+  width: 60%;
+  line-height: 155%;
+}
+.special .container .promo .card .content .promo__input {
+  font-weight: 400;
+  width: 225px;
+  padding: 9px 0 9px 25px;
+  color: #C4C4C4;
+  background-color: #fff;
+  border-radius: 30px;
+}
+.special .container .promo .card .content input::-moz-placeholder {
+  color: #C4C4C4;
+}
+.special .container .promo .card .content input::placeholder {
+  color: #C4C4C4;
+}
+.special .container .promo .card .content .promo__btn {
+  color: #fff;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 9px 53px;
+}
+.special .container .promo .card .img {
+  max-width: 189px;
+}
+.special .container .table {
+  background-color: #fff;
+  gap: 50px;
+  margin-bottom: 100px;
+}
+.special .container .table table, .special .container .table tr, .special .container .table td {
+  border-collapse: collapse;
+  padding: 40px 80px;
+  border: 1px solid #EFEFEF;
+}
+
+.footmenu {
+  display: flex;
+  align-items: 0;
+  justify-content: center;
+  gap: 150px;
+  padding: 60px 0 60px 100px;
+  background-color: #fff;
+}
+.footmenu .foothead {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 20px;
+  flex-direction: column;
+}
+.footmenu .foothead .fthead {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  width: 0;
+}
+.footmenu .foothead .ftline1 {
+  width: 200px;
+  height: 1px;
+  background-color: #EFEFEF;
+}
+.footmenu .foothead .ftbody .ftcontainer {
+  line-height: 30px;
+  color: #828282;
+}
+
+.ftbottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  padding: 50px 0;
+  border-top: 1px solid #EFEFEF;
+}
+.ftbottom .fticon {
+  display: flex;
+  align-items: 0;
+  justify-content: 0;
+  gap: 10px;
+}
+.ftbottom .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.ftbottom .cta a {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ftbottom .cta__btn {
+  font-weight: 400;
+  color: #000;
+  border: 2px solid #F13C6E;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 8px 50px;
+}
+
+.End_bottom {
+  padding: 30px 0;
+  background-color: #EFEFEF;
+}
+.End_bottom .bttext {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 200px;
+  color: #828282;
+  font-size: smaller;
+}/*# sourceMappingURL=style1.css.map */

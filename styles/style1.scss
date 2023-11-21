@@ -1,0 +1,277 @@
+@import '_mixin';
+@import '_font';
+@import '_color';
+
+*{
+    font-family: $font;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    border: none;
+    background: transparent;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav{
+    background-color: $lighter-gray;
+    .menu{
+        @include flex(center, center , 10px);
+        .menu-item{
+            padding: 17px 10px;
+            font-weight: $regular;
+        }
+    }     
+}
+
+.nav2{
+  background-color: $white;
+  border-top: 1px solid $lighter-gray;
+  .menu2{
+    @include flex(center, center, 10px);
+    .menu-item2{
+        padding: 30px 15px;
+        font-weight: $medium;
+        }
+  }
+}
+
+.callback{
+    @include flex(center, space-around, 0);
+    padding: 20px 0;
+    .logo{
+        @include flex(center, center, 20px);
+        &__text{
+            text-transform: uppercase;
+            color: $accent;
+            @include Roboto($font, 36px, $bold, 3.6px);
+
+        }
+    }
+    .cta{
+        @include flex(center, center, 40px);
+        a{
+            color: $dark;
+            font-size: 16px;
+            font-weight: $regular;
+        }
+        &__btn{
+            font-weight: $regular;
+            color: $dark;
+            border: 2px solid $accent;
+            background-color: $white;
+            border-radius: 40px;
+            padding: 8px 50px;
+        }
+    }
+}
+
+.text-ex-image{
+    @include flex (center, center, 0);
+    background: url(../img/sale.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 604px;
+}
+
+.special{
+    background-color: $lighter-gray;
+    padding: 80px 0;
+    width: 100%;
+    .container{
+        padding: 0 5%;
+        flex-direction: column;
+        @include flex(center, 0, 0);
+        .goods{
+            background-color: $lighter-gray;
+            @include flex(center, 0, 0);
+            flex-direction: column;
+            width: 100%;
+            .title{
+                background-color: $lighter-gray;
+                font-weight: $bold;
+                font-size: 24px;
+                padding-bottom: 38px;
+                align-self: center;
+                width: 80%;
+            }
+            
+            .goods-list{
+                @include flex(center, center, 30px);
+                .item{
+                    @include flex(center, center, 20px);
+                    flex-direction: column;
+                    padding: 25px;
+                    background-color: $white;
+                    
+                    img{
+                        width: 125px;
+                    }
+
+                    .name{
+                        color: $dark-gray;
+                        font-weight: $regular;
+                        line-height: 140%;
+                        text-align: center;
+                        width: 80%;
+                    }
+
+                    .price{
+                        color: $dark;
+                        font-weight: $medium;
+                        text-align: center;
+                        letter-spacing: 1.05px;
+                        font-size: 21px;
+                    }
+
+                    .btn{
+                        border-radius: 30px;
+                        background-color: $accent;
+                        color: $white;
+                        font-weight: $regular;
+                        letter-spacing: 0.7px;
+                        padding: 9px 53px;
+                    }
+                }
+            }
+        }
+
+        .promo{
+            @include flex(stretch, center, 30px);
+            width: 90%;
+            margin: 100px 0;
+            .card{
+                background-color: $accent;
+                padding: 35px 40px;
+                @include flex (center, 0, 45px);
+                .content{
+                    flex-direction: column;
+                    @include flex(flex-start, 0, 20px);
+                    .name{
+                        color: $white;
+                        font-weight: $bold;
+                        font-size: 18px;
+                    }
+                    
+                    .text{
+                        color: $white;
+                        font-weight: $regular;
+                        width: 60%;
+                        line-height: 155%;
+                    }
+
+                    .promo__input{
+                        font-weight: $regular;
+                        width: 225px;
+                        padding: 9px 0 9px 25px;
+                        color: $light-gray;
+                        background-color: $white;
+                        border-radius: 30px;
+                        
+                    }
+                    input::placeholder{color: $light-gray;}
+
+                    .promo__btn{
+                        color: $white;
+                        font-weight: $regular;
+                        color: $white;
+                        border: 2px solid $white;
+                        border-radius: 30px;
+                        padding: 9px 53px;
+                    }
+    
+                }
+
+                .img{
+                    max-width: 189px;
+                }
+            }
+
+        }
+
+        .table{
+            background-color: $white;
+            gap: 50px;
+            margin-bottom: 100px;
+
+            table , tr , td{
+                border-collapse: collapse;
+                padding: 40px 80px;
+                border: 1px solid $lighter-gray;
+            }
+        }
+
+
+  }
+}
+
+.footmenu{
+    @include flex (0, center, 150px);
+    padding: 60px 0 60px 100px;
+    background-color: $white;
+        .foothead{
+            @include flex(0, 0, 20px);
+            flex-direction: column;
+
+            .fthead{
+                @include Roboto($font, 18px, $medium, 30px);
+                width: 0;
+            }
+
+            .ftline1{
+                width: 200px;
+                height: 1px;
+                background-color: $lighter-gray;        
+            }
+
+            .ftbody{
+                .ftcontainer{
+                    line-height: 30px;
+                    color: $gray;
+                }
+
+            }
+        }
+}
+
+.ftbottom{
+    @include flex(center, space-around, 0);
+    padding: 50px 0;
+    border-top: 1px solid $lighter-gray;
+        
+        .fticon{
+            @include flex(0, 0, 10px);
+        }
+
+        .cta{
+            @include flex (center, center, 30px);
+
+                a{
+                    color: $dark;
+                    font-size: 16px;
+                    font-weight: $regular;
+                }
+
+                &__btn{
+                font-weight: $regular;
+                color: $dark;
+                border: 2px solid $accent;
+                background-color: $white;
+                border-radius: 40px;
+                padding: 8px 50px;
+                }
+        }
+
+}
+
+.End_bottom{
+    padding: 30px 0;
+    background-color: $lighter-gray;
+        .bttext{
+            @include flex(center, space-evenly, 200px);
+            color: $gray;
+            font-size: smaller;
+        }
+
+}
